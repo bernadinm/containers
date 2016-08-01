@@ -11,4 +11,5 @@ RUN wget https://dl.bintray.com/sbt/debian/sbt-0.13.7.deb
 RUN dpkg -i sbt-0.13.7.deb
 WORKDIR marathon
 RUN sbt assembly
+#ENTRYPOINT ./bin/start
 EXPOSE 8080
